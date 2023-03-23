@@ -1,0 +1,11 @@
+print("-=-=progressão aritmética=-=-")
+
+primeiro = int(input("Digite o primeiro termo da PA: "))
+razao = int(input("Digite a razão dessa PA: "))
+n = int(input("Quantos termos deseja ser imprimidos? "))
+
+ultimo = primeiro + (n-1)*razao
+ultimo = ultimo + 1
+
+for var in range(primeiro, ultimo, razao):
+    print(var)

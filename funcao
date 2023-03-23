@@ -1,0 +1,42 @@
+"""
+1 - checar se o numero n é igual a 0
+2 - se ele não for igual a 0 - reduzir 1 unidade
+"""
+
+
+"""def reduzirNumber(numeroInt):
+    print(numeroInt) # 5 4 3 2 1 0
+    if numeroInt > 0:
+        reduzirNumber(numeroInt - 1)
+        print(numeroInt) # 1 2 3 4 5
+
+
+reduzirNumber(5)"""
+
+
+"""def fatorialS(n):
+    fatorial = 1
+    if n < 0:
+        print("Não existe fatorial de número negativo")
+    elif n == 0:
+        print("O fatorial de 0 é 1")
+    else:
+        for i in range(1, n+1):
+            fatorial = fatorial * i
+        else:
+            print(f"O fatorial de {n} é {fatorial}")
+
+
+fatorialS(int(input("Digite um número para saber seu fatorial: ")))"""
+
+
+def fatorialR(num):
+    # criterio da parada
+    if num == 0:
+        return 1
+    else:
+        # parametro da chamada recursiva
+        return num * fatorialR(num - 1)
+
+
+print(fatorialR(5))

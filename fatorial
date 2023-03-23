@@ -1,0 +1,13 @@
+fatorial = 1
+
+numero = int(input("Insira um numero para achar seu fatorial: "))
+
+if numero < 0:
+    print("Nao existe fatorial de numeros negativos")
+elif numero == 0:
+    print("O fatorial de 0 eh 1")
+else:
+    for x in range(1, numero + 1):
+        fatorial = fatorial * x
+    else:
+        print(f"O fatorial de {numero} eh: {fatorial}")

@@ -1,0 +1,27 @@
+while True:
+
+    numero = 0
+    divisao = 0
+
+    numero = float(input("Digite um numero: "))
+
+    divisao = numero % 2
+
+    if divisao == 0:
+        x = 2
+    else:
+        x = 1
+
+    if numero > 0:
+        y = 1
+    else:
+        y = 2
+
+    if x == 1 and y == 1:
+        print("O numero eh positivo e impar")
+    elif x == 1 and y == 2:
+        print("O numero eh do negativo e impar")
+    elif x == 2 and y == 1:
+        print("O numero eh positivo e par")
+    elif x == 2 and y == 2:
+        print("O numero eh negativo e par")
